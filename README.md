@@ -14,7 +14,7 @@ authentication token.
 
 ## Configuration
 
-You can configure some of the variables used in the inserted recording script.
+You can configure some of the variables used in the inserted script.
 
 ```javascript
 // config/environment.js

@@ -38,7 +38,6 @@ module.exports = {
     const addonConfig = config['ember-cli-profitwell'];
     const shouldInsert = addonConfig['enabledEnvironments'].indexOf(environment) > -1;
 
-    console.log(shouldInsert);
     if (type === 'body-footer' && shouldInsert) {
       validateConfig(addonConfig);
 
