@@ -23,6 +23,11 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['ember-cli-profitwell'] = {
+    enabledEnvironments: ['development', 'test'],
+    authToken: 'the-token'
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
