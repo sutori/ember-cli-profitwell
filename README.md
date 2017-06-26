@@ -1,26 +1,28 @@
 # ember-cli-profitwell
 
-This README outlines the details of collaborating on this Ember addon.
+This addon inserts the [ProfitWell][profit-well] script into the
+`<head>` of the page for you.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-profitwell`
-* `npm install`
+```
+ember install ember-cli-profitwell
+```
 
-## Running
+After installing the addon, you **MUST** provide a configuration value for your
+authentication token.
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## Configuration
 
-## Running Tests
+You can configure some of the variables used in the inserted recording script.
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+```javascript
+// config/environment.js
 
-## Building
+ENV['ember-cli-profitwell'] = {
+  enabledEnvironments: ['production'], // default
+  authToken: 'YourAuthToken'           // required, no default
+};
+```
 
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+[profit-well]: https://www.profitwell.com

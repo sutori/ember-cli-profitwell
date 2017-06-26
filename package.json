@@ -1,12 +1,14 @@
 {
   "name": "ember-cli-profitwell",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "An Ember CLI addon for integrating with ProfitWell",
+  "repository": "https://github.com/sutori/ember-cli-profitwell",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "profitwell"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Yoran Brondsema <yoran@sutori.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
