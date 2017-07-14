@@ -1,5 +1,7 @@
 # ember-cli-profitwell
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sutori/ember-cli-profitwell.svg)](https://greenkeeper.io/)
+
 This addon inserts the [ProfitWell][profit-well] script into the
 `<head>` of the page for you.
 
