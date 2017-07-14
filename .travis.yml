@@ -23,6 +23,7 @@ matrix:
     - env: EMBER_TRY_SCENARIO=ember-canary
 
 before_install:
+  - yarn global add greenkeeper-lockfile@1
   - yarn global add phantomjs-prebuilt
   - phantomjs --version
 
@@ -30,7 +31,13 @@ install:
   - yarn global add bower
   - yarn install --no-lockfile
 
+before_script:
+  - greenkeeper-lockfile-update
+
 script:
   # Usually, it's ok to finish the test scenario without reverting
   #  to the addon's original dependency state, skipping "cleanup".
   - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
+
+after_script:
+  - greenkeeper-lockfile-upload
