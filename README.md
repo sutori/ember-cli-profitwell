@@ -26,3 +26,20 @@ ENV['ember-cli-profitwell'] = {
 ```
 
 [profit-well]: https://www.profitwell.com
+
+## Usage
+
+The addon exposes a `profitwell` service through which you can set the email of
+the current logged in user.
+
+```javascript
+// some component/controller/route
+
+profitwell: Ember.inject.service(),
+
+onLogin(userEmail) {
+  this.get('profitwell').setUserEmail(userEmail);
+}
+
+...
+```
