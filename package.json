@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-profitwell",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Ember CLI addon for integrating with ProfitWell",
   "repository": "https://github.com/sutori/ember-cli-profitwell",
   "keywords": [
