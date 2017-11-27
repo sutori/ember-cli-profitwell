@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import Service from '@ember/service';
 
-export default Ember.Service.extend({
+export default Service.extend({
   setUserEmail(email) {
     if (window.profitwell) {
       window.profitwell('user_email', email);
